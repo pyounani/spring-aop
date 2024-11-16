@@ -11,13 +11,15 @@ import pyounani.aop.order.OrderService;
 import pyounani.aop.order.aop.AspectV1;
 import pyounani.aop.order.aop.AspectV2;
 import pyounani.aop.order.aop.AspectV3;
+import pyounani.aop.order.aop.AspectV4Pointcut;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 @Slf4j
 //@Import(AspectV1.class)
 //@Import(AspectV2.class)
-@Import(AspectV3.class)
+//@Import(AspectV3.class)
+@Import(AspectV4Pointcut.class)
 @SpringBootTest
 public class AopTest {
 
